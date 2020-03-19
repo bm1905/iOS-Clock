@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Clock_FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg-2" highlightedImage="bg-2" translatesAutoresizingMaskIntoConstraints="NO" id="ujv-yF-zMy">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZY-mB-ijp">
+                                <rect key="frame" x="151" y="619" width="137" height="169"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Switch_Vertical"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rhs-AA-XM7"/>
+                                    <segue destination="F3i-Bk-Ycs" kind="show" identifier="goToSecondScreen" id="Co1-TH-hCx"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gear_Blurred" highlightedImage="Gear_Blurred" translatesAutoresizingMaskIntoConstraints="NO" id="9iL-V8-lkV">
+                                <rect key="frame" x="55" y="253" width="593" height="440"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gear_Blurred" highlightedImage="Gear_Blurred" translatesAutoresizingMaskIntoConstraints="NO" id="ybF-zG-lY7">
+                                <rect key="frame" x="-100" y="342" width="539" height="397"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gear_Blurred" highlightedImage="Gear_Blurred" translatesAutoresizingMaskIntoConstraints="NO" id="LDg-Z5-kyX">
+                                <rect key="frame" x="-251" y="258" width="539" height="397"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gear_2" highlightedImage="Gear_2" translatesAutoresizingMaskIntoConstraints="NO" id="iUE-0m-1Pu">
+                                <rect key="frame" x="124" y="220" width="216" height="622"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gear_4" highlightedImage="Gear_4" translatesAutoresizingMaskIntoConstraints="NO" id="roz-xR-aGV">
+                                <rect key="frame" x="-237" y="89" width="779" height="1094"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gear_3" highlightedImage="Gear_3" translatesAutoresizingMaskIntoConstraints="NO" id="ewW-2h-Y1g">
+                                <rect key="frame" x="-232" y="1" width="655" height="998"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Meter_New1" highlightedImage="Meter_New1" translatesAutoresizingMaskIntoConstraints="NO" id="HPx-54-UZp">
+                                <rect key="frame" x="225" y="320" width="157" height="523"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="52I-9G-xV6">
+                                <rect key="frame" x="238" y="536" width="130" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Meter_Hand" highlightedImage="Meter_Hand" translatesAutoresizingMaskIntoConstraints="NO" id="tn6-QV-dMm">
+                                <rect key="frame" x="225" y="320" width="157" height="523"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Clock" highlightedImage="Clock" translatesAutoresizingMaskIntoConstraints="NO" id="nu2-eW-hGr">
+                                <rect key="frame" x="20" y="-74" width="374" height="818"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hour_Hand" highlightedImage="Hour_Hand" translatesAutoresizingMaskIntoConstraints="NO" id="cHF-QW-LmL">
+                                <rect key="frame" x="20" y="-74" width="374" height="818"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Minute_Hand" highlightedImage="Minute_Hand" translatesAutoresizingMaskIntoConstraints="NO" id="OX1-ZZ-sUT">
+                                <rect key="frame" x="20" y="-74" width="374" height="818"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Wood_Plank" highlightedImage="Wood_Plank" translatesAutoresizingMaskIntoConstraints="NO" id="71e-AI-9Ht">
+                                <rect key="frame" x="-232" y="51" width="807" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Wood_Plank" highlightedImage="Wood_Plank" translatesAutoresizingMaskIntoConstraints="NO" id="xjh-bE-04O">
+                                <rect key="frame" x="-215" y="803" width="807" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="04/21/2019" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJV-w4-2XR">
+                                <rect key="frame" x="-48" y="59" width="267" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="25"/>
+                                <color key="textColor" red="0.82316136336873447" green="0.89817438471502586" blue="0.47915372625725683" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="-1" height="-1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Friday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xtE-0l-bY4">
+                                <rect key="frame" x="190" y="54" width="267" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="25"/>
+                                <color key="textColor" red="0.82316136340000001" green="0.89817438469999999" blue="0.47915372630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="-1" height="-1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="City Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoS-cb-W8h">
+                                <rect key="frame" x="20" y="807" width="329" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="25"/>
+                                <color key="textColor" red="0.82316136340000001" green="0.89817438469999999" blue="0.47915372630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="-1" height="-1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="88" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85G-va-whq">
+                                <rect key="frame" x="323" y="811" width="79" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="26"/>
+                                <color key="textColor" red="0.82316136340000001" green="0.89817438469999999" blue="0.47915372630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="-1" height="-1"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Second_Hand" highlightedImage="Second_Hand" translatesAutoresizingMaskIntoConstraints="NO" id="vbE-Ph-dmB">
+                                <rect key="frame" x="20" y="-74" width="374" height="818"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="yoS-cb-W8h" id="IEP-Ry-M7d"/>
+                        <outlet property="clockLong" destination="OX1-ZZ-sUT" id="S4p-Wn-moo"/>
+                        <outlet property="clockSecond" destination="vbE-Ph-dmB" id="ESV-nG-HUN"/>
+                        <outlet property="clockShort" destination="cHF-QW-LmL" id="W5c-sy-ryU"/>
+                        <outlet property="gearBlurred1" destination="9iL-V8-lkV" id="via-1O-8FR"/>
+                        <outlet property="gearBlurred2" destination="LDg-Z5-kyX" id="asy-L0-Ipy"/>
+                        <outlet property="gearBlurred3" destination="ybF-zG-lY7" id="x3q-Ec-kAS"/>
+                        <outlet property="gearLeft" destination="ewW-2h-Y1g" id="hZ5-2g-6i9"/>
+                        <outlet property="gearRight" destination="roz-xR-aGV" id="2uO-Md-vPq"/>
+                        <outlet property="gearSmall" destination="iUE-0m-1Pu" id="2i3-ek-fV3"/>
+                        <outlet property="globe" destination="tn6-QV-dMm" id="vDh-mp-0Ur"/>
+                        <outlet property="labelDay" destination="FJV-w4-2XR" id="AhA-20-gvT"/>
+                        <outlet property="labelDayName" destination="xtE-0l-bY4" id="Mnd-l4-YG8"/>
+                        <outlet property="temperatureLabel" destination="85G-va-whq" id="aKF-Fn-lOx"/>
+                        <outlet property="weatherIcon" destination="52I-9G-xV6" id="wSV-wx-e46"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="YUd-7e-oyt">
+            <objects>
+                <viewController id="F3i-Bk-Ycs" customClass="SecondViewController" customModule="Clock_FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c2V-yX-fBk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_Second1" highlightedImage="bg_Second1" translatesAutoresizingMaskIntoConstraints="NO" id="aHd-af-1eX">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8P-mz-PzT">
+                                <rect key="frame" x="18" y="63" width="41" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cancel" image="back_fixed" backgroundImage="back_fixed"/>
+                                <connections>
+                                    <action selector="cancelButtonPressed:" destination="F3i-Bk-Ycs" eventType="touchUpInside" id="Byh-iR-equ"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="textHolder" highlightedImage="textHolder" translatesAutoresizingMaskIntoConstraints="NO" id="yMQ-Xv-4KJ">
+                                <rect key="frame" x="0.0" y="46" width="414" height="816"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.34999999999999998" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City Name" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="25" background="Wood_Plank" disabledBackground="Wood_Plank" translatesAutoresizingMaskIntoConstraints="NO" id="7Wv-AM-tgb">
+                                <rect key="frame" x="106" y="309" width="220" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45475262403488159" green="0.24230536818504333" blue="0.087731130421161652" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4z-Ip-J8f">
+                                <rect key="frame" x="153" y="393" width="112" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Get Data" image="click_fixed" backgroundImage="click_fixed"/>
+                                <connections>
+                                    <action selector="getDataPressed:" destination="F3i-Bk-Ycs" eventType="touchUpInside" id="bzp-vN-cmI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cqG-HW-UkG"/>
+                    </view>
+                    <connections>
+                        <outlet property="changeCityTextField" destination="7Wv-AM-tgb" id="uO9-WJ-AST"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0wA-Is-Xdy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="989.85507246376824" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Clock" width="2126" height="2126"/>
+        <image name="Gear_2" width="2126" height="2126"/>
+        <image name="Gear_3" width="2126" height="2126"/>
+        <image name="Gear_4" width="2126" height="2126"/>
+        <image name="Gear_Blurred" width="2126" height="2126"/>
+        <image name="Hour_Hand" width="2126" height="2126"/>
+        <image name="Meter_Hand" width="1500" height="2125"/>
+        <image name="Meter_New1" width="1500" height="2125"/>
+        <image name="Minute_Hand" width="2126" height="2126"/>
+        <image name="Second_Hand" width="2126" height="2126"/>
+        <image name="Switch_Vertical" width="460" height="615"/>
+        <image name="Wood_Plank" width="1500" height="2125"/>
+        <image name="back_fixed" width="213" height="213"/>
+        <image name="bg-2" width="1536" height="2953"/>
+        <image name="bg_Second1" width="1536" height="2953"/>
+        <image name="click_fixed" width="378" height="109"/>
+        <image name="textHolder" width="1536" height="2953"/>
+    </resources>
+</document>
